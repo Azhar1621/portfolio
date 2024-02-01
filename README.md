@@ -11,7 +11,7 @@ This repository contains the code for my personal portfolio website. The website
 
 ## Credits
 - This project is developed by Azhar Khan.
-- Special thanks to @codeguyakash.
+- Special thanks to @codeguyakash
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
