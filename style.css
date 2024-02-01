@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  /* background-color: aqua; */
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+li > a {
+  text-decoration: none;
+  color: black;
+}
+
+li>a:hover{
+  color: blue;
+}
+nav-item {
+  display: flex;
+}
+
+#resume-btn {
+  color: white;
+  background-color: #078d84;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+#resume-btn:hover {
+  background-color: white;
+  color: #078d84;
+  border: 2px solid #078d84;
+  transition: 200ms;
+}
+
+#logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+#hamburger {
+  width: 50px;
+  display: none;
+}
+
+/* --------Body Section Start From Here-------- */
+
+#hero-section{
+/* background-color: rgb(5, 252, 116); */
+display: flex;
+height: 100vh;
+align-items: start;
+justify-content: left
+}
+
+#hero-img{
+  /* width: 200px; */
+  height: 500px;
+  position: relative;
+
+  /* background-color: yellow; */
+
+}
+#hero-img>img{
+width: 480px;
+position: absolute;
+top: 5%;
+/* translate: transform(-50%, -50%); */
+
+}
+
+#hero-content{
+  /* width: 200px; */
+  height: 500px;
+  /* background-color: orange; */
+  padding: 101px 242px 5px 55px;
+  width: 100%;
+  
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h5{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+p{
+  margin-top: 20px;
+}
+
+#hire-btn {
+  color: white;
+  background-color: #078d84;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+#hire-btn:hover {
+  background-color: white;
+  color: #078d84;
+  border: 2px solid #078d84;
+  transition: 200ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Start From here */
+@media (max-width: 430px) {
+  ul {
+    display: none;
+  }
+  #hamburger {
+
+    display: block;
+  }
+#hire-btn{
+  display: none;
+}
+
+}
