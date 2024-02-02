@@ -5,23 +5,26 @@
   font-family: "Montserrat", sans-serif;
   /* border: 1px solid greenyellow; */
 }
-:root{
-  --primary-color :#078d84;
-  --sub-heading : 35px;
+:root {
+  --primary-color: #078d84;
+  --sub-heading: 35px;
 }
-body,html {
+body,
+html {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
 }
 
 nav {
-  /* background-color: aqua; */
+  background-color: #fff;
   height: 80px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 
 ul {
@@ -36,13 +39,13 @@ li {
 li > a {
   text-decoration: none;
   color: black;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0);
   padding: 4px 10px;
   border-radius: 5px;
 }
 
-li>a:hover{
-border: 2px solid var(--primary-color);
+li > a:hover {
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
 nav-item {
@@ -77,61 +80,75 @@ nav-item {
   display: none;
 }
 
-#logo-img{
+#logo-img {
   height: 168px;
   width: 0px 0px 0px 0px;
 }
 
 /* --------Body Section Start From Here-------- */
 
-#hero-section{
-/* background-color: rgb(5, 252, 116); */
-display: flex;
-height: 100vh;
-margin-bottom: -150px;
-align-items: start;
-justify-content: left
+#hero-section {
+  /* background-color: rgb(5, 252, 116); */
+  display: flex;
+  height: 100vh;
+  /* margin-top: 0px; */
+  align-items: start;
+  justify-content: left;
 }
 
-#hero-img{
+.hero-img {
   /* width: 200px; */
   height: 500px;
-  position: relative;
+  padding-top: 100px;
+  /* position: relative; */
+  
 
   /* background-color: yellow; */
-
 }
-#hero-img>img{
-width: 480px;
-position: absolute;
-top: 5%;
-/* translate: transform(-50%, -50%); */
-
+#hero-img > img {
+  width: 480px;
+  position: absolute;
+  top: 5%;
+  /* translate: transform(-50%, -50%); */
 }
 
-#hero-content{
+#hero-content {
   /* width: 200px; */
   height: 500px;
   /* background-color: orange; */
-  padding: 101px 50px  5px 55px;
-  width: 100%;
-  
+  padding: 105px 80px 15px 105px;
+    width: 100%;
 }
 
-h1{
+h1 {
   font-size: 50px;
   font-weight: 600;
 }
 
-h5{
+h5 {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
 }
+#azhar{
+  font-weight: 900;
+  color: var(--primary-color);
+}
 
-#hero-para{
+#hey{
+  display: flex;
+  align-items: center;
+}
+
+#hey>img{
+
+  width: 100px;
+}
+
+#hero-para {
+  font-size: 20px;
   margin: 30px 10px 36px 0px;
-  
+  line-height: 30px;
 }
 
 .hire-btn {
@@ -152,192 +169,235 @@ h5{
   transition: 200ms;
 }
 
+#skill-section {
+  background: linear-gradient(360deg, rgb(2, 0, 36) 0%, rgb(7, 141, 132) 60%);
 
-
-
-
-#skill-section{
-  background-color: #3e3e70;
-  
   padding: 100px 0;
   /* height: 250px; */
-
 }
-#skills-container{
+#skills-container {
   display: flex;
   height: 200px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  
 }
 
-
-
-.skills{
+.skills {
   display: flex;
   align-items: center;
-  justify-content:  space-evenly;
+  justify-content: space-evenly;
   height: 100%;
 }
 
-.sub-heading{
+.sub-heading {
   color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 15px;
-
 }
-.skill-item{
+.skill-item {
   margin: 0 50px;
 }
 
-.skill-item>img{
+.skill-item > img {
   width: 50px;
   display: block;
   margin: 0 auto;
 }
-#expertise{
+#expertise {
   color: white;
   font-size: var(--sub-heading);
 }
 
-.skill-item>h3{
+.skill-item > h3 {
   color: white;
 }
 
-#exlogo{
+#exlogo {
   margin-bottom: 19px;
 }
 
-
-#project-section{
-  padding: 100px 0;
-
+#project-section {
+  padding: 50px 0;
 }
 
-
-.projects{
+.projects {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
   padding-top: 50px;
-  
 }
 
-.project{
+.project {
   width: 600px;
   /* background-color: #078d84; */
   border-radius: 30px;
   /* border: 1px solid ; */
-  box-shadow: 0px 0px 20px 2px rgba(214,211,214,1);
+  box-shadow: 0px 0px 20px 2px rgba(214, 211, 214, 1);
   transition: 500ms;
 }
 
-.project:hover{
-  scale: 1.03; 
+.project:hover {
+  scale: 1.03;
   cursor: pointer;
   transition: 500ms;
 }
 
-.project>div>img{
+.project > div > img {
   width: 600px;
   border-radius: 30px 30px 0px 0px;
 }
 
-.project-content{
+.project-content {
   padding: 20px;
 }
 
-.project-content>p{
+.project-content > p {
   margin: 10px 0;
 }
 
-.project-content>span{
+.project-content > span {
   background-color: rgb(7, 7, 7);
   margin-bottom: 10px;
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 14px;
   color: white;
-
 }
 /* use . dot for class and # hash for id */
-.project-link{
+.project-link {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-.project-link:hover{
-
+.project-link:hover {
   color: rgb(63, 2, 176);
 }
 
-
-#project-section>h3{
+#project-section > h3 {
   font-size: 30px;
-  
 }
 
-#about-section{
-  height: 100vh;
-  background-color: yellow;
-  
+/* -----about section start from here--------- */
+
+#about-section {
+  /* background-color: #078d84; */
+  height: 80vh;
 }
 
-#education-section{
+#about-parent {
+  display: flex;
+}
+
+#left-child > img {
+  padding: 30px;
+  /* margin: 50px; */
+  width: 600px;
+}
+
+#right-child {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  /* background-color: green; */
+  justify-content: space-around;
+}
+
+#about-content > h2 {
+  font-size: 30px;
+  /* padding-top: 100px; */
+  margin: 40px 0px 10px 0px;
+  /* background-color: red; */
+}
+
+#about-content > p {
+  /* margin-top: 30px; */
+  font-size: 20px;
+  /* background-color: red; */
+}
+#three-child {
+  display: flex;
+  /* background-color: red; */
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-grand-child {
+    box-shadow: 0px 0px 20px 2px#bcb6b6;
+
+  /* border: 2px solid; */
+  width: 230px;
+  height: 120px;
+  padding: 15px 0px 10px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.right-grand-child>h2{
+  font-size: 45px;
+  font-weight: 800px;
+}
+
+
+/* -------Education Section Start from here---------- */
+
+#education-section {
   padding: 50px 0;
   /* background-color: #078d8426; */
-  
 }
 
-
-
-.educations>div{
+.educations > div {
   display: flex;
   border: 3px solid rgb(0, 0, 0);
   height: 200px;
   margin: 50px 100px;
   border-radius: 50px;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,141,132,1) 60%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(7, 141, 132, 1) 60%
+  );
   transition: 500ms;
-  
 }
-.educations>div:hover{
-  scale: 1.03; 
+.educations > div:hover {
+  scale: 1.03;
   cursor: pointer;
   transition: 500ms;
 }
 
-.education-head{
+.education-head {
   border: 2px solid white;
   width: 100%;
   border-radius: 50px;
-  padding: 35px  0  0 50px ;
-  
+  padding: 35px 0 0 50px;
 }
 
-.education-head>h3{
+.education-head > h3 {
   font-size: 40px;
   color: white;
 }
-.education-head>h4{
+.education-head > h4 {
   font-size: 20px;
   color: white;
 }
 
-.education-content{
-  padding: 35px ;
+.education-content {
+  padding: 35px;
   font-size: 16px;
   color: white;
 }
 
-footer{
-  background-color: rgb(50 48 54);
+footer {
+  /* background-color: #3e3e70; */
   height: 30vh;
   padding-top: 100px;
+
+  background: linear-gradient(240deg, rgb(2, 0, 36) 0%, rgb(7, 141, 132) 60%);
 }
 
-footer>div{
+footer > div {
   color: white;
 
   display: flex;
@@ -345,13 +405,24 @@ footer>div{
   align-items: center;
   justify-content: center;
 }
-footer>div>div>a{
+footer > div > div > a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
-#line{
+
+
+.h-line{
+  height: 1px;
+  background-color: #d2d2d2;
   width: 80%;
-  border-top: 2px solid rgba(86, 101, 105, 0.493);
-  margin: 10px auto;
+  margin: 20px auto;
+}
+
+.icon-f{
+  width: 25px;
+  margin: 5px;
+
 }
