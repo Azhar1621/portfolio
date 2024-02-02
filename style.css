@@ -11,20 +11,42 @@
 }
 body,
 html {
-  height: 100%;
+
   width: 100%;
   scroll-behavior: smooth;
+  
+}
+main{
+  margin: 0pxgi 50px;
 }
 
 nav {
-  background-color: #fff;
-  height: 80px;
-  padding: 0 20px;
+  padding: 10px 20px;
+}
+
+#btns {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+
+  height: 60px;
+}
+
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
+}
+
+.nav-items > div > img {
+  width: 250px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -33,7 +55,7 @@ ul {
 
 li {
   list-style: none;
-  margin: 73px 19px;
+  
   font-size: 20px;
 }
 li > a {
@@ -81,43 +103,27 @@ nav-item {
 }
 
 #logo-img {
-  height: 168px;
-  width: 0px 0px 0px 0px;
+  width: 300px;
 }
 
 /* --------Body Section Start From Here-------- */
 
 #hero-section {
-  /* background-color: rgb(5, 252, 116); */
   display: flex;
   height: 100vh;
-  /* margin-top: 0px; */
+  margin-top: 20px;
   align-items: start;
-  justify-content: left;
+  justify-content: space-evenly;
 }
 
-.hero-img {
-  /* width: 200px; */
-  height: 500px;
-  padding-top: 100px;
-  /* position: relative; */
-  
-
-  /* background-color: yellow; */
-}
 #hero-img > img {
   width: 480px;
   position: absolute;
   top: 5%;
-  /* translate: transform(-50%, -50%); */
 }
 
 #hero-content {
-  /* width: 200px; */
-  height: 500px;
-  /* background-color: orange; */
-  padding: 105px 80px 15px 105px;
-    width: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -130,25 +136,25 @@ h5 {
   font-weight: 400;
   margin-bottom: 20px;
 }
-#azhar{
+.azhar {
   font-weight: 900;
   color: var(--primary-color);
 }
 
-#hey{
+#hey {
   display: flex;
   align-items: center;
 }
 
-#hey>img{
-
+#hey > img {
   width: 100px;
 }
 
 #hero-para {
   font-size: 20px;
-  margin: 30px 10px 36px 0px;
+  margin-bottom: 20px;
   line-height: 30px;
+  margin-top: 20px;
 }
 
 .hire-btn {
@@ -297,7 +303,7 @@ h5 {
 
 #right-child {
   width: 100%;
-  padding: 30px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   height: 600px;
@@ -326,7 +332,7 @@ h5 {
 }
 
 .right-grand-child {
-    box-shadow: 0px 0px 20px 2px#bcb6b6;
+  box-shadow: 0px 0px 20px 2px#bcb6b6;
 
   /* border: 2px solid; */
   width: 230px;
@@ -335,11 +341,10 @@ h5 {
   border-radius: 20px;
   font-size: 20px;
 }
-.right-grand-child>h2{
+.right-grand-child > h2 {
   font-size: 45px;
   font-weight: 800px;
 }
-
 
 /* -------Education Section Start from here---------- */
 
@@ -413,16 +418,14 @@ footer > div > div > a {
   font-size: 20px;
 }
 
-
-.h-line{
+.h-line {
   height: 1px;
   background-color: #d2d2d2;
   width: 80%;
   margin: 20px auto;
 }
 
-.icon-f{
+.icon-f {
   width: 25px;
   margin: 5px;
-
 }
