@@ -8,10 +8,19 @@
 :root {
   --primary-color: #078d84;
   --sub-heading: 35px;
+  --white-color: white;
+  --black-color: black;
 }
+.dark-theme{
+  --white-color: black;
+  --black-color: white;
+  --primary-color: yellow;
+  transition: 0.2s ease-in;
+}
+
 body,
 html {
-
+  background-color: var(--white-color);
   width: 100%;
   scroll-behavior: smooth;
   
@@ -21,7 +30,9 @@ main{
 }
 
 nav {
-  padding: 10px 20px;
+  padding: 35px 20px;
+  margin-left: 60px;
+  
 }
 
 #btns {
@@ -60,7 +71,7 @@ li {
 }
 li > a {
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   border: 2px solid rgba(255, 255, 255, 0);
   padding: 4px 10px;
   border-radius: 5px;
@@ -75,13 +86,17 @@ nav-item {
 }
 
 #resume-btn {
-  color: white;
+  color: var(--black-color);  
   background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
   padding: 15px 25px;
   cursor: pointer;
   transition: 200ms;
+}
+.hire-bttn img{
+  width: 30px;
+  cursor: pointer;
 }
 
 #resume-btn:hover {
@@ -95,6 +110,7 @@ nav-item {
   font-weight: bold;
   font-size: 20px;
   margin-right: 30px;
+  display: none;
 }
 
 #hamburger {
@@ -104,6 +120,7 @@ nav-item {
 
 #logo-img {
   width: 300px;
+  display: none;
 }
 
 /* --------Body Section Start From Here-------- */
@@ -149,8 +166,12 @@ h5 {
 #hey > img {
   width: 100px;
 }
+.intro{
+  color: var(--black-color);
+}
 
 #hero-para {
+  color: var(--black-color);
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 30px;
@@ -158,7 +179,7 @@ h5 {
 }
 
 .hire-btn {
-  color: white;
+  color: var(--white-color);
   background-color: var(--primary-color);
   border-radius: 5px;
   padding: 15px 25px;
@@ -166,11 +187,12 @@ h5 {
   border: 2px solid var(--primary-color);
   transition: 200ms;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .hire-btn:hover {
   background-color: white;
-  color: var(--primary-color);
+  color: var(--white-color);
   border: 2px solid var(--primary-color);
   transition: 200ms;
 }
@@ -197,7 +219,7 @@ h5 {
 }
 
 .sub-heading {
-  color: rgb(0, 0, 0);
+  color: var(--black-color);
   text-align: center;
   margin-top: 15px;
 }
@@ -274,7 +296,7 @@ h5 {
 /* use . dot for class and # hash for id */
 .project-link {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--black-color);
 }
 .project-link:hover {
   color: rgb(63, 2, 176);
@@ -429,3 +451,41 @@ footer > div > div > a {
   width: 25px;
   margin: 5px;
 }
+
+@media screen and (max-width: 768px){
+  body{
+    /* width: 100vh; */
+    background-color: red;
+  }
+  .nav-container{
+    display: none;
+  }
+  #hey{
+    display: none;
+  }
+  #hero-section{
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  #hero-content{
+    text-align: center;
+  }
+  #skill-section{
+    flex-direction: column;
+  }
+  .skills{
+    flex-direction: column;
+  }
+  #about-parent{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #left-child > img{
+    display: none;
+  }
+.projects{
+    flex-direction: column;
+  }
+}
+
